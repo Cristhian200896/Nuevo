@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Luna & Lúpulo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">LUNA & LÚPULO</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html" class="active">Menú</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-padding">
+        <section class="container">
+            <h1 class="section-title">Destacados del Menú</h1>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-info">
+                        <h3>Hamburguesa "Luna"</h3>
+                        <p>Carne premium, queso cheddar derretido, tocino crujiente y salsa de la casa.</p>
+                        <span class="price">S/. 45</span>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-info">
+                        <h3>Tacos al Pastor</h3>
+                        <p>Tres tacos con carne de cerdo marinada, piña, cilantro y cebolla.</p>
+                        <span class="price">S/. 36</span>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-info">
+                        <h3>Cóctel de Autor</h3>
+                        <p>Nuestra versión contemporánea con pisco, frutos rojos y un toque secreto.</p>
+                        <span class="price">S/. 25</span>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-info">
+                        <h3>Tabla de Ibéricos</h3>
+                        <p>Selección fina de jamones, quesos maduros, aceitunas y pan tostado.</p>
+                        <span class="price">S/. 65</span>
+                        <button class="btn-order">Ordenar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Luna & Lúpulo</h3>
+                <p>Av. José de la Riva-Agüero 123, Comas, Lima</p>
+            </div>
+            <div class="footer-links">
+                <p class="copy">&copy; 2026 Luna & Lúpulo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>

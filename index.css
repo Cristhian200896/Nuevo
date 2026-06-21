@@ -1,0 +1,193 @@
+.hero {
+    background: linear-gradient(rgba(15, 20, 20, 0.75), rgba(15, 20, 20, 0.95)), 
+                url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary { background-color: var(--gold); color: var(--bg-dark); }
+.btn-primary:hover { background-color: var(--gold-hover); }
+.btn-secondary { background-color: transparent; color: var(--white); border: 1px solid var(--white); }
+.btn-secondary:hover { background-color: var(--white); color: var(--bg-dark); }
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.3rem; }
+    .hero-buttons { flex-direction: column; align-items: center; }
+    .hero-buttons .btn { width: 80%; }
+}
+
+/* VARIABLES DE DISEÑO (Estilo Restobar Limeño Nocturno) */
+:root {
+    --bg-dark: #0f1414;       /* Fondo oscuro elegante */
+    --bg-card: #161d1d;       /* Fondo gris-verde para tarjetas */
+    --gold: #c5a880;          /* Dorado para acentos */
+    --gold-hover: #b3946b;
+    --text-light: #e0e5e5;    
+    --text-muted: #9aa4a4;    
+    --white: #ffffff;
+    --font-title: 'Cormorant Garamond', serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Espacio superior para que el menú fijo no tape el contenido */
+.page-padding {
+    padding-top: 140px;
+    padding-bottom: 4rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+    color: var(--gold);
+    letter-spacing: 1px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(15, 20, 20, 0.95);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    padding-bottom: 5px;
+}
+
+.nav-menu a:hover, 
+.nav-menu a.active {
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0a0d0d;
+    border-top: 1px solid rgba(197, 168, 128, 0.1);
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-info p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.copy {
+    font-size: 0.8rem;
+    color: rgba(154, 164, 164, 0.4);
+    margin-top: 0.5rem;
+}
+
+/* RESPONSIVIDAD BASE */
+@media (max-width: 768px) {
+    .nav { flex-direction: column; gap: 1.2rem; }
+    .nav-menu { gap: 1.2rem; flex-wrap: wrap; justify-content: center; }
+    .page-padding { padding-top: 180px; }
+    .footer-content { flex-direction: column; text-align: center; }
+}
